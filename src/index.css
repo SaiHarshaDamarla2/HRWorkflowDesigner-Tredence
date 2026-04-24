@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "reactflow/dist/style.css";
+
+@theme {
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-primary: #3b82f6;
+  --color-border: #e2e8f0;
+}
+
+/* Ensure React Flow takes full height */
+#root, html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: var(--color-background);
+  color: #1e293b; /* slate-800 equivalent */
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
