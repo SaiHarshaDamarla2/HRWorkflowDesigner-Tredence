@@ -1,5 +1,5 @@
 <div align="center">
-<b>Tredence AI Studio: HR Workflow Designer Module</b>
+<h1><b>Tredence AI Studio: HR Workflow Designer Module</b></h1>
 </div>
 
 ### A highly scalable, performant module designed for HR administrators to visually create, validate, and simulate complex internal workflows. Built with a focus on clean architecture, type safety, and product ergonomics.
