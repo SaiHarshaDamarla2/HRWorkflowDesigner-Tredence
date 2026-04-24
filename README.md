@@ -1,7 +1,8 @@
-<center>
-## 🧠 **Tredence AI Studio: HR Workflow Designer Module**
-</center>
-A highly scalable, performant module designed for HR administrators to visually create, validate, and simulate complex internal workflows. Built with a focus on clean architecture, type safety, and product ergonomics.
+<div align="center">
+<b>Tredence AI Studio: HR Workflow Designer Module</b>
+</div>
+
+### A highly scalable, performant module designed for HR administrators to visually create, validate, and simulate complex internal workflows. Built with a focus on clean architecture, type safety, and product ergonomics.
 
 
 
@@ -46,12 +47,12 @@ Access the designer module at: http://localhost:5173
 
 ## 🚧**Technical Challenges & Solutions**
 ### 1. **Managing Stale Closures in Custom Nodes**
-**Challenge:** React Flow custom nodes can inadvertently trap stale state within closures, failing to reflect the latest global store updates during rapid edits.
-**Solution:** Decoupled the local component state from the React Flow data object. I utilized useEffect hooks to synchronize the local form state with the global store selectively, ensuring data integrity without triggering expensive, canvas-wide re-renders.
+* **Challenge:** React Flow custom nodes can inadvertently trap stale state within closures, failing to reflect the latest global store updates during rapid edits.
+* **Solution:** Decoupled the local component state from the React Flow data object. I utilized useEffect hooks to synchronize the local form state with the global store selectively, ensuring data integrity without triggering expensive, canvas-wide re-renders.
 
 ### 2. **Ensuring Strict Type Compliance (verbatimModuleSyntax)**
-**Challenge:** The modern Vite/TypeScript configuration enforces strict module syntax, which complicates standard imports for types like Node and Edge.
-**Solution:** Refactored the codebase to explicitly separate type-only imports using import type and updated the Zustand store interfaces. This satisfied the compiler’s most rigorous linting rules and resulted in a zero-warning production build.
+* **Challenge:** The modern Vite/TypeScript configuration enforces strict module syntax, which complicates standard imports for types like Node and Edge.
+* **Solution:** Refactored the codebase to explicitly separate type-only imports using import type and updated the Zustand store interfaces. This satisfied the compiler’s most rigorous linting rules and resulted in a zero-warning production build.
 
 ### 3. **Data Persistence and Schema Integrity during Hydration**
 * **Challenge:** Implementing the "Import JSON" feature introduced a risk of application crashes if a user uploaded a malformed or outdated JSON schema. Directly hydrating the **Zustand store** with untrusted external data could lead to inconsistent UI states or runtime errors.
@@ -85,10 +86,10 @@ Access the designer module at: http://localhost:5173
 * **Node Versioning:** Introducing a **snapshot system** allowing users to capture, save, and **compare different iterations** of the same workflow side-by-side.
 * **Collaborative Editing:** Integrating **WebSockets** (via Ably or Pusher) to support concurrent, **multi-user workflow design** with live presence indicators.
 
-🎯 **Closing Thought**
+### 🎯**Closing Thought**
               "The best way to predict the future is to architect it, one node at a time."
 
-<center>
-**Developed with passion by D. Sai Harsha**
-</center>
+<div align="center">
+<b>Developed with passion by D. Sai Harsha</b>
+</div>
 
