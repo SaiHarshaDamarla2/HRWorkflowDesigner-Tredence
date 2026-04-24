@@ -1,4 +1,3 @@
-import React from 'react';
 import { Cpu, Layers, MousePointer2 } from 'lucide-react';
 import { useWorkflowStore } from '../store/useWorkflowStore';
 

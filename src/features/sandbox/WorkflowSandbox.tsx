@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { X, Loader2, CheckCircle2, AlertTriangle } from 'lucide-react';
 import { useWorkflowStore } from '../../store/useWorkflowStore';
 import { mockApi } from '../../api/mock';
